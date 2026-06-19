@@ -21,6 +21,21 @@ graph TD
     L --> M([Fin: Proceso Detenido])
     H --> N([Fin: Material Entregado])
 
-    style D fill:#f9f,stroke:#333,stroke-width:2px
-    style K fill:#f9f,stroke:#333,stroke-width:2px
-    style I fill:#ffcccb,stroke:#f00,stroke-width:1px
+%% --- CONFIGURACIÓN DE ESTILOS Y COLORES ---
+    
+    %% Estilo para Decisiones / Rombos (Amarillo/Naranja suave)
+    style D fill:#fff2cc,stroke:#d6b656,stroke-width:2px
+    style K fill:#fff2cc,stroke:#d6b656,stroke-width:2px
+
+    %% Estilo para el flujo Estándar / Éxito (Verde/Azul claro)
+    style E fill:#dae8fc,stroke:#6c8ebf,stroke-width:1px
+    style F fill:#dae8fc,stroke:#6c8ebf,stroke-width:1px
+    style G fill:#dae8fc,stroke:#6c8ebf,stroke-width:1px
+    style H fill:#d5e8d4,stroke:#82b366,stroke-width:2px
+    style N fill:#d5e8d4,stroke:#82b366,stroke-width:2px
+
+    %% Estilo para el flujo de Urgencia / Alerta (Rojo/Rosa claro)
+    style I fill:#f8cecc,stroke:#b85450,stroke-width:1px
+    style J fill:#f8cecc,stroke:#b85450,stroke-width:1px
+    style L fill:#f5f5f5,stroke:#666666,stroke-width:1px
+    style M fill:#f5f5f5,stroke:#666666,stroke-width:1px
