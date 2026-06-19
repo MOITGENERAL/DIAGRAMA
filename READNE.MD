@@ -1,3 +1,4 @@
+```mermaid
 graph TD
     A([Inicio: Necesidad de Material en Obra]) --> B[Consultar Fecha Requerida en Carta Gantt]
     B --> C[Calcular días de anticipación de la solicitud]
