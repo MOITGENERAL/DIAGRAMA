@@ -7,8 +7,9 @@ graph TD
     %% Camino Regular (Cumple el plazo)
     D -- SÍ --> E[Generar Solicitud de Material Estándar]
     E --> F[Enviar a Adquisiciones / Logística]
-    F --> G[Gestión de Compra y Programación de Despacho]
-    G --> H[Recepción de Material en Obra]
+    F --> G[Revisar solicitudes de compra]
+    G --> H[Gestión de Compra y Programación de Despacho]
+    H --> I[Recepción de Material en Obra]
     
     %% Camino de Urgencia (No cumple el plazo)
     D -- NO --> I[Generar Solicitud con Alerta de Urgencia]
@@ -19,7 +20,7 @@ graph TD
     K -- NO --> L[Rechazo de Solicitud / Reprogramar Actividad en Gantt]
     
     L --> M([Fin: Proceso Detenido])
-    H --> N([Fin: Material Entregado])
+    I --> N([Fin: Material Entregado])
 
 %% --- CONFIGURACIÓN DE ESTILOS Y COLORES ---
     
