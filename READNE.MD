@@ -16,10 +16,10 @@ graph TD
     J --> K[Residente justifica el retraso]
     K --> M{¿Aprobación Especial<br>por Jefatura/Gerencia?}
     
-    K -- SÍ --> F
-    K -- NO --> M[Rechazo de Solicitud / Reprogramar Actividad en Gantt]
+    M -- SÍ --> F
+    M -- NO --> O[Rechazo de Solicitud / Reprogramar Actividad en Gantt]
     
-    M --> N([Fin: Proceso Detenido])
+    O --> P([Fin: Proceso Detenido])
     I --> O([Fin: Material Entregado])
 
 %% --- CONFIGURACIÓN DE ESTILOS Y COLORES ---
