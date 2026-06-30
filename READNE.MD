@@ -20,7 +20,7 @@ graph TD
     M -- NO --> O[Rechazo de Solicitud / Reprogramar Actividad en Gantt]
     
     O --> P([Fin: Proceso Detenido])
-    I --> O([Fin: Material Entregado])
+    I --> R([Fin: Material Entregado])
 
 %% --- CONFIGURACIÓN DE ESTILOS Y COLORES ---
     
@@ -33,10 +33,10 @@ graph TD
     style F fill:#dae8fc,stroke:#6c8ebf,stroke-width:1px
     style G fill:#dae8fc,stroke:#6c8ebf,stroke-width:1px
     style H fill:#d5e8d4,stroke:#82b366,stroke-width:2px
-    style N fill:#d5e8d4,stroke:#82b366,stroke-width:2px
+    style R fill:#d5e8d4,stroke:#82b366,stroke-width:2px
 
     %% Estilo para el flujo de Urgencia / Alerta (Rojo/Rosa claro)
     style I fill:#f8cecc,stroke:#b85450,stroke-width:1px
     style J fill:#f8cecc,stroke:#b85450,stroke-width:1px
-    style L fill:#f5f5f5,stroke:#666666,stroke-width:1px
+    style O fill:#f5f5f5,stroke:#666666,stroke-width:1px
     style M fill:#f5f5f5,stroke:#666666,stroke-width:1px
