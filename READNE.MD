@@ -12,15 +12,15 @@ graph TD
     H --> I[Recepción de Material en Obra]
     
     %% Camino de Urgencia (No cumple el plazo)
-    D -- NO --> I[Generar Solicitud con Alerta de Urgencia]
-    I --> J[Residente justifica el retraso]
-    J --> K{¿Aprobación Especial<br>por Jefatura/Gerencia?}
+    D -- NO --> J[Generar Solicitud con Alerta de Urgencia]
+    J --> K[Residente justifica el retraso]
+    L --> M{¿Aprobación Especial<br>por Jefatura/Gerencia?}
     
     K -- SÍ --> F
-    K -- NO --> L[Rechazo de Solicitud / Reprogramar Actividad en Gantt]
+    K -- NO --> M[Rechazo de Solicitud / Reprogramar Actividad en Gantt]
     
-    L --> M([Fin: Proceso Detenido])
-    I --> N([Fin: Material Entregado])
+    M --> N([Fin: Proceso Detenido])
+    I --> O([Fin: Material Entregado])
 
 %% --- CONFIGURACIÓN DE ESTILOS Y COLORES ---
     
