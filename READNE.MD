@@ -14,7 +14,7 @@ graph TD
     %% Camino de Urgencia (No cumple el plazo)
     D -- NO --> J[Generar Solicitud con Alerta de Urgencia]
     J --> K[Residente justifica el retraso]
-    L --> M{¿Aprobación Especial<br>por Jefatura/Gerencia?}
+    K --> M{¿Aprobación Especial<br>por Jefatura/Gerencia?}
     
     K -- SÍ --> F
     K -- NO --> M[Rechazo de Solicitud / Reprogramar Actividad en Gantt]
